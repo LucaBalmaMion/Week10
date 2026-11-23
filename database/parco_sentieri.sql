@@ -1,3 +1,4 @@
+
 CREATE DATABASE IF NOT EXISTS parco_sentieri;
 USE parco_sentieri;
 DROP TABLE IF EXISTS sentiero;

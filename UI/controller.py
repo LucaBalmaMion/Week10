@@ -6,7 +6,8 @@ class Controller:
         self._model = model
 
     def handle_crea_grafo(self, e):
-        pass
+        self._model.crea_grafo()
+        print(self._model.grafo)
 
     def handle_visita_ampiezza(self, e):
         pass

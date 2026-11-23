@@ -1,4 +1,5 @@
 from database.DB_connect import DBConnect
+from model.luogo import Luogo
 
 class DAO:
     @staticmethod
@@ -10,7 +11,8 @@ class DAO:
                 cursor.execute("SELECT id, nome, tipo, quota_m FROM luogo ORDER BY id")
                 result = []
                 for row in cursor:
-                    result.append(row)
+                    luogo = Luogo(row['id'], row['nome'], row['tipo'], row['quota_m'])
+                    result.append(luogo)
                 return result
             finally:
                 cursor.close()
