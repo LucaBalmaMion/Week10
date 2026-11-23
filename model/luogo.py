@@ -1,8 +1,5 @@
 from dataclasses import dataclass
 
-from pip._internal.models import installation_report
-
-
 @dataclass
 class Luogo:
     id : int
